@@ -6,22 +6,34 @@
 
 body{
     font-family: "Raleway", sans-serif;
-    
+    font-size: 16px;
 }
-img {
-    max-width: 100%;
-}
+
+
 .container{
-    margin: 35px;
+    margin: 5px;
 }
-/*nav*/
+
+
+
+                                    /*nav*/
 .logo{
-    width: 9%;
-    margin:  0 30px 0 25px;
+     margin:0 40px;
+    
 }
 
 .title {
     margin: 30px 0;
+}
+
+.annonce{
+    font-size: 25px;
+    margin: 5px 20px;
+
+}
+
+.small_info {
+    margin: 0 20px;
 }
 
 a {
@@ -29,16 +41,14 @@ a {
     color: #000;
 }
 
-.annonce{
-    font-size: 25px;
-    margin: 5px 0;
-
-}
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+   justify-content: space-between;
+}
+
+.nav {
+    width: auto;
 }
 
 nav ul{
@@ -46,21 +56,32 @@ nav ul{
     align-items: center;
     text-decoration: none;
     list-style: none;
-    color: grey;
-   
-   
+    color: grey;  
+    justify-content: flex-end; 
 }
 
+.nav_1 {
+    padding: 20px;
+    border-top: 3px solid transparent;
+    border-left: none;
+    border-right: none;
+    
+}
 nav li {
-    margin: 10px;
+    margin: -5px 0;
 }
 .nav_1:hover {
-    color: #0065fc;
-    padding-top: 55px;
-    border-top: #0065FC solid 3px;
+    border-top: 3px solid #0065FC;
 }
 
-/*Button Recherche*/
+header a:hover {
+    color: #0065fc;
+}
+
+
+
+
+                                 /*Button Recherche*/
 
 #map {
     display: flex;
@@ -69,12 +90,13 @@ nav li {
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
     width: 50px;
-    height: 40px;
+    height: 45px;
 }
 
 input{
     width: 200px;
     height: 40px;
+    padding: 20px;
     border: 0.5px solid #d9d9d9;
 }
 
@@ -125,7 +147,7 @@ input::placeholder {
     background-color:#0065fc;
     color: white ;
     width: 110px;
-    height: 40px;
+    height: 42px;
     font-size: 15px;
     font-weight: bold;
 }
@@ -137,7 +159,7 @@ input::placeholder {
 .search {
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 0 20px ;
 
 }
 
@@ -159,16 +181,25 @@ input::placeholder {
 .container__info {
     display: flex;
     align-items: center;
-    margin: 40px 0;
+    margin: 40px 20px;
 }
 
-/*Filtres*/
 
-.filtres{
+
+
+                                    /*Filtres*/
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.filters_title{
     margin-right: 30px ;
 }
 
-.filters {
+.filters_icons {
     display: flex;
     align-items: center;
     margin: 30px 0;
@@ -192,7 +223,8 @@ a .filter_icon:hover{
     height: 35px;
     margin-right: 40px;
     color: #000;
-    transition: .2s ; transform: ease-in-out;
+    transition: .2s ; 
+    
 }
 
 .icon{
@@ -222,11 +254,15 @@ a .filter_icon:hover{
      height: 40px;
  }
 
- /*Hebergement */
+
+
+
+
+                                      /*Hebergement */
 
  main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
  }
 
  .title__main {
@@ -234,7 +270,7 @@ a .filter_icon:hover{
     margin: 30px 0 10px 30px;
 }
 
-#container__section {
+#container__main {
     background-color: #F2F2F2;
     border-radius: 25px; 
     width: 68%;
@@ -246,7 +282,7 @@ a .filter_icon:hover{
      display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 0px;
+    margin: 0 15px;
      
  }
 
@@ -256,7 +292,7 @@ a .filter_icon:hover{
     width: 30%;
     height: 240px;
     margin: 40px 0;
-    transition: 0.2s; transform: ease-in-out;
+    transition: 0.2s;
     box-shadow: 5px 5px 5px 5px rgb(213, 213, 218);
     
  }
@@ -309,11 +345,14 @@ i {
     margin: 0 20px;
 }
 
-/* Populaires*/
+
+
+
+                                      /* Populaires*/
 
  aside {
      padding: 10px;
-     width: 30%;
+     width: 28%;
      height: auto;
      background-color: #f2f2f2;
      border-radius: 25px;
@@ -323,6 +362,16 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.title__aside {
+    font-size: 25px;
+    margin: 20px 0 10px 20px;
+}
+
+.fa-chart-line {
+    font-size: 30px;
+    color: #000;
 }
  
  .popular_star {
@@ -337,7 +386,7 @@ i {
     border-radius: 25px;
     width: 85%;
     height: 180px;
-    transition: .2s ; transform: ease-in-out;
+    transition: .2s ;
     box-shadow: 5px 5px 5px 5px rgb(213, 213, 218);
     margin: 45px 30px;
     padding: 5px;
@@ -347,6 +396,7 @@ i {
     border-radius: 25px 0px 0px 25px;
     width: 40%;
     height: 170px;
+    object-fit: cover;
  }
 
  .container__popular:hover {
@@ -354,33 +404,45 @@ i {
  }
 
  .name__popular {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     color: #000;
     padding: 0;
     margin: 0 0 5px 0;
  }
-/*Activite a marseille*/
+
+ .card__info__popular {
+    margin: 5px 20px 0 ;
+ }
+
+
+
+                                   /*Activite a marseille*/
 
 #article_container {
-    display: flex;
+    width: auto;
 }
  
 .title__activite {
     font-weight: bold;
     font-size: 22px;
-    margin:  60px 0;
+    margin:  60px 20px;
+}
+
+.container_activites {
+    display: flex;
+    margin: 0 10px;
 }
 
 .container_activite{
      display: flex;
-     width:  900px;
-     margin: 0 10px;
+     width:  100%;
+     margin: 0 17px;
  }
  .container_small_activite{
      
-     width: 880px;
-     margin: 0 55px;
+     width: 100%;
+     margin: 0 0 0 25px;
      
 
  }
@@ -388,14 +450,14 @@ i {
  .container_large_img {
     border-radius: 25px;
     box-shadow: 2px 2px 2px 2px rgb(228, 228, 230);
-    width: 400px;
-    height: 550px;
+    width: 100%;
+    height: 430px;
     
  }
  .large_img {
      border-radius: 25px 25px 0px 0px;
      width: 100%;
-     height: 470px;
+     height: 380px;
      -o-object-fit: cover;
         object-fit: cover;
  }
@@ -403,9 +465,9 @@ i {
  .container_small__img {
     border-radius: 25px;
     box-shadow: 2px 2px 2px 2px rgb(213, 213, 218);
-    width: 450px;
-    height: 250px;
-    margin: 20px 0;
+    width: 100%;
+    height: 190px;
+    margin: 0 0 50px;
 
     
  }
@@ -413,7 +475,7 @@ i {
  .small__img{
     border-radius: 25px 25px 0px 0px;
     width: 100%;
-    height: 180px;
+    height: 140px;
     -o-object-fit: cover;
        object-fit: cover;
     
@@ -422,14 +484,14 @@ i {
 .container_small_img_pomegues {
     border-radius: 25px;
     box-shadow: 2px 2px 2px 2px rgb(213, 213, 218);
-    width: 400px;
-    height: 280px;
+    width: 100%;
+    height: 230px;
 }
 
 .small_img_pomegues {
     border-radius: 25px 25px 0px 0px;
     width: 100%;
-    height: 210px;
+    height: 180px;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -437,8 +499,8 @@ i {
 .container_small_img_frioul {
     border-radius: 25px;
     box-shadow: 2px 2px 2px 2px rgb(213, 213, 218);
-    width: 400px;
-    height: 220px;
+    width: 100%;
+    height: 150px;
     margin: 50px 0;
 
 }
@@ -446,41 +508,46 @@ i {
 .small_img_frioul {
     border-radius: 25px 25px 0px 0px;
     width: 100%;
-    height: 140px;
+    height: 100px;
     -o-object-fit: cover;
        object-fit: cover;
 }
 
 .name__activite {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #000;
     padding: 0;
     margin: 15px;
 }
 
-/* Footer*/
 
-footer {
+
+                                           /* Footer*/
+
+.container_footer {
     display: flex;
+    justify-content: space-between;
+    background-color: #eeeded;
+    width: 100%;
+    height: 200px;   
 }
 
-.footer {
-    background-color: #eeeded;
-    width: 1000px;
-    height: 250px;
-    padding: 20px;
+.container_footer_category {
+    display: flex;
+    box-sizing: border-box;
+    align-items: stretch;
     
 }
 
 footer ul {
     list-style: none;
-    margin: 0 50px;
-    padding: 0;
+    margin: 20px;
+    padding: 10px;
 }
 
 footer li {
-    margin: 10px 0 ;
+    margin: 10px;
 
 }
 
@@ -494,7 +561,11 @@ footer a {
     margin: 20px 0;
 }
 
-/*Media queries 992px*/
+
+
+
+
+                                      /*Media queries 992px*/
 
 @media  screen and (max-width: 992px)
 
@@ -504,61 +575,129 @@ footer a {
     }
     .nav_1:hover {
         color: #0065fc;
-        padding-top: 5px;
+        padding-top: 20px;
         border-top: #0065FC solid 3px;
+    }
+
+    .search {
+        margin: 20px 20px;
+    }
+
+    .filter_icons {
+        margin: 30px -18px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    #container__main {
+        width: 100%;
+        margin-bottom: 50px;
+        border-radius: 0;
+    }
+
+    aside {
+        width: 100%;
+        border-radius: 0;
+        margin: 20px -2px;
+    }
+
+    .container__popular {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .container_activites {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+}
+
+
+
+
+
+@media  screen and (max-width: 920px) {
+
+     .container__footer__category {
+        padding-right: 0;
+    }
+    
+    .container_footer {
+        height: 260px;
     }
 }
 
-/* Media queries 768px*/
+
+
+
+                                        /* Media queries 768px*/
 
 @media screen and (max-width: 768px)
  {
     .container {
         margin: 0;
-    }
-    
-
-    nav {
-        display: block;
-        justify-content: space-between;
-        align-items: center;
+        padding: 0;
+        overflow: hidden;
     }
 
+     .logo {
+        align-self: center;
+        width: 200px;
+        display: flex;
+        margin-left: 100px;
+     }
+
+     .annonce {
+         font-size: 20px;
+         margin: 0 10px 10px;
+     }
+
+     .small_info {
+         font-size: 14px;
+         margin: 0 10px;
+     }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        
+    }
+
+
+    header li {
+        min-width: 200px;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
     
-    nav li {
-        padding: 10px;
+    .nav_1:hover {
+        padding: 20px;
+        border-top: 3px solid transparent;
         border-bottom: #0065FC solid 3px;
-        
-    }
-
-    .logo {
-    width: 35%;
-    margin: 20px 130px;
-    }
-        
-
-    .nav {
-        
-        font-size: 20px;
-        justify-content: space-around;
-        
     }
 
 .title {
-        text-align: center;
+        text-align: start;
     }
-
-    
 
     .button {
         display: none;
     }
     .search {
         justify-content: center;
-    }
-
-    input {
-        width: 250px;
+        width: 90%;
     }
 
     .fa-search {
@@ -567,126 +706,176 @@ footer a {
         background-color: #0065fc;
         border-radius: 15px;
         margin: -10px ;
-        height: 40px;
-        width: 45px;
+        height: 50px;
+        width: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .filters {
-        flex-wrap: wrap;
-        margin: 0 25px  ;
+    input {
+        width: 100%;
+        height: 50px;
     }
 
-    .filtres {
-        
-        margin: 0;
+    #map {
+        height: 52px;
+    }
+    .filters {
+        display: block;
+        margin: 0 10px;
         
     }
+
+    .filters_title {
+        margin:  20px;
+    }
+    .filters_icons {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 10px ;
+        padding: 0 10px  ;
+    }  
 
     .filter_icon {
-        display: flex;
-        margin: 10px 50px;
+        
+        margin: 10px 0;
     }
-
-    .fa-info {
+    .title {
+        text-align: justify;
         margin: 20px;
-        height: 30px;
+        width: 80%;
+    }
+    .fa-info {
+        margin: 0 10px;
+        height: 40px;
+        width: 50px;
     }
 
     .container__info {
         font-size: 15px;
-        margin: 0 10px;
+        margin: 0 10px 20px;
         text-align: justify;
     }
 
-     
+
+        /*hebergements*/
+    
     main {
         flex-direction: column-reverse;
         
     }
 
-    aside {
-        width: 100%;
-    }
 
-    #container__section {
+    #container__main {
         background-color: #ffffff;
         width: 100%;
     }
 
+    .title__main {
+        margin: 30px 0 10px 10px;
+    }
+
     .container__cards {
         flex-direction: column;
-        width: 1000px;
+        margin: 15px;
+    }
+
+     .hebergement_card {
+        width: 95%;
+        margin: 10px 0 0 10px; 
+        box-shadow: 1px 1px 1px 1px #d9d9d9; 
+    }
+
+     aside {
+        width: 100%;
+        border-radius: 0;
     }
 
     .container__popular {
-        width: 90%;
-        margin: 45px 10px;
+        width: 95%;
+        margin: 30px 10px;
+        
     }
 
-    .hebergement_card {
-        width: 33%;
-        margin: 40px 16px;
+    .title__aside {
+        margin: 20px 10px;
     }
+
+    .fa-chart-line {
+        font-size: 25px;
+        margin: 0 10px;
+    }
+
+    
+   
 
     /*Activite a marseille*/
 
     #article_container {
-        display: block;
+        display: block; 
+        width: 100%;
     }
 
     .title__activite {
         margin: 30px 20px;
     }
 
+    .container_activites {
+        display: block;
+    }
+
     .container_activite {
         display: block;
         margin: 0;
         padding: 0;
+        width: auto;
 
     }
 
     .container_small_activite {
-        margin: 20px;
-        padding: 0;
+        margin: 0;
+        width: 95%;
+        margin: 10px 10px;
     }
 
     .container_large_img {
-        width: 320px;
+        width: 95%;
         height: 150px;
-        margin: 15px 25px;
+        margin: 10px 10px;
         
     }
 
+    .large_img {
+        width: 100%;
+        height: 100px;
+    }
+
     .container_small__img {
-        width: 320px;
+        width: 100%;
         height: 150px;
-        margin: 15px 10px;
+        margin: 20px 0;
+      
     }
 
     .container_small_img_pomegues {
-        width: 320px;
+        width: 100%;
         height: 150px;
-        margin: 5px 5px;
     }
 
     .small_img_pomegues {
+        width: 100%;
         height: 100px;
     }
 
     .container_small_img_frioul {
-        width: 320px;
+        width: 100%;
         height: 150px;
-        margin: 15px 5px;
+        margin: 15px 0;
     }
 
     .small_img_frioul {
-        height: 100px;
-    }
-
-    .large_img {
         width: 100%;
         height: 100px;
     }
@@ -696,12 +885,25 @@ footer a {
         height: 100px;
     }
 
-    
+    .name__activite {
+        margin: 10px;
+    }
+
     
 
+    .container_footer {
+        flex-direction: column;
+        height: 575px;
+    }
+
     footer {
-        width: 100px;
-        display: block;
-        padding: 30px 0 0 ;
+        width: 100%;
+    }
+
+    .footer li{
+        width: 100%;
+        padding:30px 0;
+        margin: -45px;
+        
     }
 }
